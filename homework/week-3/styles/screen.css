@@ -1,0 +1,188 @@
+body {
+	background-image: url("http://clients.skona.com/ga/images/metalshop.jpg");
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: right top;
+
+}
+
+header {
+
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 25px 25px 25px 150px;
+	background-color: #000000;
+}
+
+
+header nav {
+	position: absolute;
+	right:200px;
+	top:75px;
+}
+
+
+header nav ol {
+	margin: 0;
+	line-height: 10px;
+
+}
+
+header li {
+	display: inline;
+	margin-left: 50px;
+}
+
+main {
+
+	display: block;
+	max-width: 800px;
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 40px;
+	background-color: #000000;
+}
+
+
+
+.productbox {
+	display: block;
+	position: relative;
+	max-width: 800px;
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	padding: 40px 40px 350px 40px;
+	background-color: #000000;
+}
+
+.productdetail{
+	display: block;
+	position: relative;
+	max-width: 700px;
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+
+
+.clearfix {
+  overflow: auto;
+}
+
+
+.productimage {
+	display: block;
+	position: relative;
+	max-width: 400px;
+	float: left;
+}
+
+.producttext {
+	display: block;
+	position: relative;
+	max-width: 400px;
+	float: right;
+	margin-top: 15px;
+	margin-bottom: 100px;
+}
+
+
+footer {
+
+	display: block;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	max-width: 100%;
+	margin-bottom: auto;
+	margin-right: auto;
+	padding: 5px;
+	background-color: #272822;
+}
+
+
+button {
+
+	display: block;
+	position: relative;
+	color: #ffffff;
+	background-color: #ed7319;
+	border: none;
+	border-radius: 2px;
+	width: 150px;
+	height: 50px;
+	margin-bottom: 50px;
+	font-family: 'Open Sans'; sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	color: #ffffff;
+}
+
+
+
+
+a {
+	font-family: 'Open Sans'; sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #CBCBCB;
+	}
+
+
+h1 {
+	text-align: center;
+	font-family: 'Open Sans'; sans-serif;
+	font-size: 28px;
+	font-weight: 100;
+	color: #CBCBCB;
+
+	}
+
+
+p {font-family: 'Open Sans'; sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	color: #CBCBCB;
+
+	}
+
+
+h6 {font-family: 'Open Sans'; sans-serif;
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 28px;
+	color: #CBCBCB;
+	text-align: center;
+
+	}
+
+
+hr {
+	display: block;
+	height: 1px;
+    border: 0;
+    border-top: 1px
+    solid #5B5F6B;
+    margin: 10px;
+    padding: 25px;
+    max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 0px;
+	}

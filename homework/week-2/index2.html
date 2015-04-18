@@ -17,13 +17,23 @@ body {
 
 }
 
+
+
+
+div#container {
+width: 800px;
+margin: 0px auto;
+background: #000000;
+padding: 0px;
+}
+
+
+
+
 header {
 
 	display: block;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
+	position: relative;
 	max-width: 100%;
 	margin-left: auto;
 	margin-right: auto;
@@ -73,7 +83,7 @@ footer {
 
 button {
 
-	display: block;
+	display: inline;
 	position: relative;
 	margin-left: 1100px;
 	color: #ffffff;
@@ -109,7 +119,7 @@ a:hover {
 
 
 li {
-	display: block;
+	display: inline;
 	position: absolute;
 	margin-left: 900px;
 	margin-top: 10px;
@@ -174,13 +184,21 @@ hr {
 
 	<body>
 
+<div id="container">
+<div id="content" class="clearfix">
+
 		<header>
-			<logo><a href="#"><img src="http://clients.skona.com/ga/images/acme.png"></a></logo>
-			<ul>
-				<li><a href="#">Products</a></li>
-			</ul>
-			<button>Sign up</button>
+
+			<nav>
+				<logo><a href="#"><img src="http://clients.skona.com/ga/images/acme.png"></a></logo>
+				<ul>
+					<li><a href="#">Products</a></li>
+				</ul>
+				<button>Sign up</button>
+			</nav>
 		</header>
+
+
 
 		<main>
 			<h1>Welcome to ACME Corporation</h1>
@@ -191,6 +209,8 @@ hr {
 		<footer>
 			<h6>Copyright 2015</h6>
 		</footer>
+</div>
+</div>
 
 	</body>
 

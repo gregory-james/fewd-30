@@ -1,0 +1,69 @@
+/* CSS reset */
+/* --------- */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+td {
+  background: skyblue;
+  padding: 18px;
+}
+
+
+section {
+  overflow: hidden;
+}
+
+
+div {
+  float: left;
+  background: skyeblue;
+  padding: 10px;
+}
+
+
+/*Flexbox*/
+
+ul {
+  display: flex;
+}
+
+li {
+  background: skyblue;
+  padding: 10px;
+}
+
+
+/*Flexbox even columns*/
+
+.even-columns li{
+  flex: 1;
+}
+
+
+/*Flexbox two-column*/
+
+.two-column .sidebar {
+  width: 200px;
+}
+
+.two-column .main {
+  flex: 1;
+  background: grey;
+}
+
+
+/*Flexbox four-column*/
+
+.four-column .sidebar {
+  flex: 1;
+}
+
+.two-column .main {
+  flex: 2;
+  background: grey;
+}

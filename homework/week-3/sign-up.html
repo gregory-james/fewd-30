@@ -6,6 +6,23 @@
 
 <title>ACME ANVIL CORPORATION</title>
 
+<script charset="utf-8">
+
+
+function fullName(firstName, lastName) {
+	var result = firstName + " " + lastName;
+	return result;
+}
+
+
+	function sumOfTwo(a, b) {
+		var result = a + b;
+		return result;
+	}
+
+
+</script>
+
 
 <style type="text/css">
 
@@ -101,6 +118,18 @@ a {
 	}
 
 
+label {
+		font-family: 'Open Sans'; sans-serif;
+		text-decoration: none;
+		font-size: 12px;
+		line-height: 24px;
+		font-weight: 500;
+		padding-right: 25px;
+		color: #ffffff;
+		}
+
+
+
 a:hover {
     color: #7AA21D;
 }
@@ -182,11 +211,42 @@ hr {
 			<button>Sign up</button>
 		</header>
 
-		<main>
-			<h1>Welcome to ACME Corporation</h1>
-			<p>Culpa small batch occupy, officia placeat American Apparel minim street art scenester next level exercitation. Cred occupy fingerstache, quis nisi fixie laboris Pitchfork cardigan incididunt distillery +1 kitsch. Fap cray irony asymmetrical pour-over, health goth adipisicing. Fashion axe seitan YOLO, readymade ad esse irony magna PBR&B mustache kitsch nihil enim aliqua. Delectus health goth vero art party Odd Future freegan. 90's fixie wolf pickled ennui, banjo lo-fi locavore Pitchfork consectetur. Sint ugh reprehenderit, dolore Intelligentsia locavore fixie exercitation sapiente bespoke gluten-free pariatur eu craft beer nihil.</p>
-			<P>Odio shabby chic eiusmod typewriter Blue Bottle, qui dreamcatcher tousled. Typewriter voluptate tilde, skateboard placeat magna lomo fingerstache PBR chia literally sapiente tote bag minim.</P>
-		</main>
+
+
+
+	<main>
+
+		<h1>Sign Up</h1>
+
+	<form class="form" action="index.html" method="post">
+
+		<div class="form-group">
+		<label for="First Name">First Name</label>
+			<input type="text" name="fname" value="" placeholder="First Name">
+		</div>
+
+		<div class="form-group">
+		<label for="Last Name">Last Name</label>
+			<input type="text" name="lname" value="" placeholder="Last Name" required>
+		</div>
+
+		<div class="form-group">
+		<label for="Email">Email</label>
+			<input type="email" name="email" value="" placeholder="Email">
+		</div>
+
+
+		<div class="form-group">
+			<input type="submit" name="submit" value="Save my Info!">
+		</div>
+
+
+</form>
+
+
+
+
+	</main>
 
 		<footer>
 			<h6>Copyright 2015</h6>
