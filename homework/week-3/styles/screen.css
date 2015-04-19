@@ -3,6 +3,7 @@ body {
 	background-size: auto;
 	background-repeat: no-repeat;
 	background-position: right top;
+	margin-bottom: 150px;
 
 }
 
@@ -14,6 +15,7 @@ header {
 	left: 0;
 	right: 0;
 	max-width: 100%;
+	z-index: 10000;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 25px 25px 25px 150px;
@@ -42,6 +44,7 @@ header li {
 main {
 
 	display: block;
+	z-index: 2;
 	max-width: 800px;
 	margin-top: 300px;
 	margin-left: auto;
@@ -51,52 +54,79 @@ main {
 	background-color: #000000;
 }
 
+/* products */
 
-
-.productbox {
+container {
 	display: block;
 	position: relative;
-	max-width: 800px;
-	margin-top: 300px;
+	width: 900px;
+	margin-top: 250px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: 10px;
-	padding: 40px 40px 350px 40px;
+	padding-top: 25px;
 	background-color: #000000;
 }
 
-.productdetail{
-	display: block;
-	position: relative;
-	max-width: 700px;
-	margin-top: 300px;
-	margin-left: auto;
-	margin-right: auto;
-	margin-bottom: 10px;
-}
-
-
-
 .clearfix {
-  overflow: auto;
+	overflow: auto;
 }
 
 
-.productimage {
-	display: block;
-	position: relative;
-	max-width: 400px;
+article {
+	
+	width: 800px;
+	padding: 10px;
+	margin: 20px;
+
+}
+
+article img {
 	float: left;
+	width: 300px;
+	padding: 20px;
+
 }
 
-.producttext {
-	display: block;
-	position: relative;
-	max-width: 400px;
-	float: right;
-	margin-top: 15px;
-	margin-bottom: 100px;
+
+section {
+
+	width: 400px;
+	font-family: 'Open Sans';
+	font-size: 14px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 100;
+	line-height: 28px;
+	color: white;
+	padding: 20px;
 }
+
+button {
+	position: absolute;
+	font-family: 'Open Sans'; sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	border-radius: 3px;
+	border: 0px;
+	width: 150px;
+	margin-left: 20px;
+	background-color: #ff9600;
+	color: #ffffff;
+	padding: 10px;
+	box-shadow: none;
+}
+
+hr {
+   	display: block;
+   	max-width: 800px;
+    height: 0px;
+    border: 0;
+    border-top: 1px solid #666666;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
 
 
 footer {
@@ -107,30 +137,9 @@ footer {
 	right: 0;
 	bottom: 0;
 	max-width: 100%;
-	margin-bottom: auto;
-	margin-right: auto;
-	padding: 5px;
+	padding: 0px;
 	background-color: #272822;
 }
-
-
-button {
-
-	display: block;
-	position: relative;
-	color: #ffffff;
-	background-color: #ed7319;
-	border: none;
-	border-radius: 2px;
-	width: 150px;
-	height: 50px;
-	margin-bottom: 50px;
-	font-family: 'Open Sans'; sans-serif;
-	font-size: 18px;
-	font-weight: 100;
-	color: #ffffff;
-}
-
 
 
 
@@ -140,7 +149,7 @@ a {
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 500;
-	color: #CBCBCB;
+	color: #ffffff;
 	}
 
 
@@ -170,19 +179,4 @@ h6 {font-family: 'Open Sans'; sans-serif;
 	color: #CBCBCB;
 	text-align: center;
 
-	}
-
-
-hr {
-	display: block;
-	height: 1px;
-    border: 0;
-    border-top: 1px
-    solid #5B5F6B;
-    margin: 10px;
-    padding: 25px;
-    max-width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 0px;
 	}
