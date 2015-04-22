@@ -3,59 +3,104 @@
 <script>
 
 
-// function add(a, b) {
-// 		var x = parseInt(a);
-// 		var y = parseInt(b);
-// 		var result = x + y;
-// 		return result;
-// 	}
-//
-
-	// function add(nStr, mStr) {
-	// 		var nInt = parseInt(nStr);
-	// 		var mInt = parseInt(MStr);
-	// 		var result = nInt + mInt;
-	// 		return result;
-	// 	}
-
-
-		// function add(n, m) {
-		// 		var n = parseInt(n);
-		// 		var m = parseInt(m);
-		// 		var result = n + m;
-		// 		return result;
-		// 	}
-
-		//
-		// function add(nStr, mStr) {
-		// 		var nInt = parseInt(nStr);
-		// 		var mInt = parseInt(mStr);
-		// 		var result = nInt + mInt;
-		// 		return result;
-		// 	}
-		//
-		//
-		// 	var nInt = prompt("What's the first number?");
-		// 	var mInt = prompt("What's the second number?");
-		// 	var sum = add(nInt, mInt);
-		// 	alert(sum);
+// gregory-james FEWD30 Week 4 Homework
 
 
 
-			function add(nStr, mStr) {
-					var nInt = parseInt(nStr);
-					var mInt = parseInt(mStr);
-					var oInt = parseInt(oStr);
-					var result = nInt + mInt + oInt;
+		longestSide
+
+			function longestSide(a,b) {
+					var a = parseFloat(a);
+					var b = parseFloat(b);
+					var result = Math.sqrt((a*a) + (b*b));
 					return result;
 				}
 
+				var a = prompt("What is a?")
+			  	var b = prompt("What is b?")
+			  	var c = longestSide(a,b);
+			  	alert("The longest side is " + c);
 
-				var nInt = prompt("What's your first name?");
-				var mInt = prompt("What's your last name?");
-				var oInt = prompt("When were you born?");
-				var sum = add(nInt, mInt, oInt);
-				alert(sum);
+
+
+
+
+			// circumference
+
+			// function circumference() {
+
+			// 		var radius = parseInt(a);
+			// 		var result = 2 * Math.PI * radius;
+			// 		return result;
+			// 	}
+
+			// 	alert("Radius of a circle: 2 * pi * r")
+			// 	var a = prompt("What is the radius?")
+			// 	alert("The circumference is " + circumference());
+	
+
+
+
+/*
+				temperature
+
+				function temperature() {
+
+						var degrees = parseFloat(a);
+						var result = (a - 32) * (5/9);
+						return result;
+					}
+
+					var a = prompt("What temperature is it in F?")
+					alert("In celcius, that's " + temperature());*/
+
+
+/*
+
+					  height
+
+
+						function height() {
+
+								var inches = parseInt(a);
+								var result = 2.54 * inches;
+								return result;
+							}
+
+							var a = prompt("How tall are you in inches?")
+							alert("In centimeters, that's " + height());*/
+
+
+
+
+/*
+								  Ye Old Temperature / Height combo Alert / Prompt Dialog Hell! 
+								  Very good for adult entertainment / torrent site development?
+								  */
+
+
+								// function temperature() {
+
+								// 		var degrees = parseFloat(a);
+								// 		var result = (a - 32) * (5/9);
+								// 		return result;
+								// 	}
+
+								// function height() {
+
+								// 		var inches = parseInt(b);
+								// 		var result = 2.54 * inches;
+								// 		return result;
+								// 	}
+
+
+								// 	var a = prompt("What temperature is it in F?")
+								// 	alert("In celcius, that's " + temperature());
+
+								// 	var b = prompt("How tall are you in inches?")
+								// 	alert("In centimeters, that's " + height());
+
+
 
 
 
