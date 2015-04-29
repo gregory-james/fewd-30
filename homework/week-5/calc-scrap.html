@@ -1,0 +1,141 @@
+<script charset="utf-8">
+// second stab here!
+
+var add = document.querySelector("#add-button");
+var subtract = document.querySelector("#subtract-button");
+var multiply = document.querySelector("#multiply-button");
+var divide = document.querySelector("#divide-button");
+
+function addClicked(clickEvent) {
+var firstOperand = document.getElementById('first-operand');
+var secondOperand = document.getElementById('second-operand');
+var result = document.getElementById('result');
+var a = parseInt(firstOperand.textContent);
+var b = parseInt(secondOperand.textContent);
+var sum = a+b;
+return result.textContent = sum;
+}
+
+function subtractClicked(clickEvent) {
+var firstOperand = document.getElementById('first-operand');
+var secondOperand = document.getElementById('second-operand');
+var result = document.getElementById('result');
+var a = parseInt(firstOperand.textContent);
+var b = parseInt(secondOperand.textContent);
+var sum = a-b;
+return result.textContent = sum;
+}
+
+function multiplyClicked(clickEvent) {
+var firstOperand = document.getElementById('first-operand');
+var secondOperand = document.getElementById('second-operand');
+var result = document.getElementById('result');
+var a = parseInt(firstOperand.textContent);
+var b = parseInt(secondOperand.textContent);
+var sum = a*b;
+return result.textContent = sum;
+}
+
+function divideClicked(clickEvent) {
+var firstOperand = document.getElementById('first-operand');
+var secondOperand = document.getElementById('second-operand');
+var result = document.getElementById('result');
+var a = parseInt(firstOperand.textContent);
+var b = parseInt(secondOperand.textContent);
+var sum = a/b;
+return result.textContent = sum;
+}
+
+add.addEventListener("click", addClicked);
+subtract.addEventListener("click", subtractClicked);
+multiply.addEventListener("click", multiplyClicked);
+divide.addEventListener("click", divideClicked);
+
+
+
+
+
+
+
+
+
+
+
+
+// first stab here!
+
+// // function to add
+//
+//
+// var add = document.querySelector("#add-button");
+//
+// function addClicked(clickEvent) {
+// var firstOperand = document.getElementById('first-operand');
+// var secondOperand = document.getElementById('second-operand');
+// var result = document.getElementById('result');
+// var a = parseInt(firstOperand.textContent);
+// var b = parseInt(secondOperand.textContent);
+// var sum = a+b;
+// return result.textContent = sum;
+// }
+//
+// add.addEventListener("click", addClicked);
+//
+//
+//
+// // function to subtract
+//
+//
+// var subtract = document.querySelector("#subtract-button");
+//
+// function subtractClicked(clickEvent) {
+// var firstOperand = document.getElementById('first-operand');
+// var secondOperand = document.getElementById('second-operand');
+// var result = document.getElementById('result');
+// var a = parseInt(firstOperand.textContent);
+// var b = parseInt(secondOperand.textContent);
+// var sum = a-b;
+// return result.textContent = sum;
+// }
+//
+// subtract.addEventListener("click", subtractClicked);
+//
+//
+//
+// // function to multiply
+//
+//
+// var multiply = document.querySelector("#multiply-button");
+//
+// function multiplyClicked(clickEvent) {
+// var firstOperand = document.getElementById('first-operand');
+// var secondOperand = document.getElementById('second-operand');
+// var result = document.getElementById('result');
+// var a = parseInt(firstOperand.textContent);
+// var b = parseInt(secondOperand.textContent);
+// var sum = a*b;
+// return result.textContent = sum;
+// }
+//
+// multiply.addEventListener("click", multiplyClicked);
+//
+//
+//
+// // function to divide
+//
+//
+// var divide = document.querySelector("#divide-button");
+//
+// function divideClicked(clickEvent) {
+// var firstOperand = document.getElementById('first-operand');
+// var secondOperand = document.getElementById('second-operand');
+// var result = document.getElementById('result');
+// var a = parseInt(firstOperand.textContent);
+// var b = parseInt(secondOperand.textContent);
+// var sum = a/b;
+// return result.textContent = sum;
+// }
+//
+// divide.addEventListener("click", divideClicked);
+
+</script>
