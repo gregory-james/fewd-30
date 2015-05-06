@@ -1,0 +1,67 @@
+<ul>
+  <!-- Movies will go here, see below. -->
+</ul>
+
+<script>
+var favoriteMovies = [
+  {
+    name: 'Cool Runnings',
+    year: 1993,
+    genre: 'Family',
+    url: 'http://www.imdb.com/title/tt0106611/',
+    ratings: [5, 5, 5, 5, 5, 5, 5, 5]
+  },
+  {
+    name: 'Terminator 2',
+    year: 1991,
+    genre: 'Action',
+    url: 'http://www.imdb.com/title/tt0103064/',
+    ratings: [5, 4, 3, 5, 4, 5, 4, 5, 5, 5, 3]
+  },
+  {
+    name: 'Interstellar',
+    year: 2014,
+    genre: 'Adventure / Sci-fi',
+    url: 'http://www.imdb.com/title/tt0816692/',
+    ratings: [5, 3, 5, 5, 1, 2, 4, 5, 5, 2]
+   }
+]
+
+
+// pseudo code steps !! 
+
+// 1 - define the list 
+// 2 - get movie link, text
+// 4 - make an average rating 
+// 5 - create span of info (year, genre, average rating, number of ratings)
+// 6 - create / append to list
+
+var list = document.querySelector("ul");
+
+for (var i = 0; i < favoriteMovies.length; i++) {
+  var movie = favoriteMovies[i];
+
+  var link = document.createElement("a");
+  link.setAttribute("href", movie.url)
+  link.textContent = movie.name;
+
+  var totalRating = 0;
+
+  for (var j = 0; j < movie.ratings.length; j++) {
+      totalRating += movie.ratings[j];
+    }
+
+  var avgRating = Math.round((totalRating / movie.ratings.length) * 10) / 10
+
+  var span = document.createElement("span");
+  span.textContent = " (" + movie.year + ", " + movie.genre + ", " + avgRating + " stars, " + movie.ratings.length + " ratings)";
+
+  var movieItem = document.createElement("li");
+  movieItem.appendChild(link);
+  movieItem.appendChild(span);
+
+  list.appendChild(movieItem);
+  
+}
+
+</script>

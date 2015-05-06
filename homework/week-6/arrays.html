@@ -1,0 +1,62 @@
+<ul>
+  <li><input type="text" id="item-1" value="tomatoes"></li>
+  <li><input type="text" id="item-2" value="avocado"></li>
+  <li><input type="text" id="item-3" value="bananas"></li>
+  <li><input type="text" id="item-4" value="celery"></li>
+  <li><input type="text" id="item-5" value="apples"></li>
+</ul>
+
+<ol>
+  <li id="item-a"></li>
+  <li id="item-b"></li>
+  <li id="item-c"></li>
+  <li id="item-d"></li>
+  <li id="item-e"></li>
+</ol>
+
+<script>
+// Copy the values from the first list into the second list but sort them!
+
+
+// get value of each item (one-by-one)
+// array.push() each value into an array
+// set the text contentfor the ordered items
+
+
+
+var a = []
+var item1 = document.querySelector("#item-1").value;
+var item2 = document.querySelector("#item-2").value;
+var item3 = document.querySelector("#item-3").value;
+var item4 = document.querySelector("#item-4").value;
+var item5 = document.querySelector("#item-5").value;
+
+a.push(item1);
+a.push(item2);
+a.push(item3);
+a.push(item4);
+a.push(item5);
+
+a.sort()
+
+document.querySelector("#item-a").textContent = item1;
+document.querySelector("#item-b").textContent = item2;
+document.querySelector("#item-c").textContent = item3;
+document.querySelector("#item-d").textContent = item4;
+document.querySelector("#item-e").textContent = item5;
+
+
+
+for (var i=0; i <fruit.length; i = i+1) {
+  var fruit = a[1];
+
+}
+
+
+
+
+
+
+
+
+</script>
