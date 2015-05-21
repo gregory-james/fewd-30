@@ -1,0 +1,155 @@
+<html>
+<head>
+	<title>crazy ass movie search</title>
+
+<style type="text/css">
+
+/*button {
+	position: absolute;
+	font-family: 'Open Sans'; sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	border-radius: 3px;
+	border: 0px;
+	width: 150px;
+	margin-left: 20px;
+	background-color: #14A4DC;
+	color: #ffffff;
+	padding: 10px;
+	box-shadow: none;
+}*/
+
+hr {
+   	display: block;
+   	max-width: 500px;
+  	border-color:  #6C6C75;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+
+
+a {
+	font-family: 'Open Sans'; sans-serif;
+	text-decoration: none;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 500;
+	color: #ffffff;
+	}
+
+
+h1 {
+	text-align: left;
+	font-family: 'Open Sans'; sans-serif;
+	font-size: 28px;
+	font-weight: 100;
+	color: #6C6C75;
+
+	}
+
+
+
+li {font-family: 'Open Sans'; sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	color: #CBCBCB;
+
+	}
+
+
+p {font-family: 'Open Sans'; sans-serif;
+	font-size: 16px;
+	font-weight: 100;
+	line-height: 28px;
+	color: #CBCBCB;
+
+	}
+
+
+</style>
+
+
+</head>
+<body>
+
+		<h1>Crazy Ass Movie Search</h1>
+
+		<form action="submit">
+
+		  Find a movie <input type="search" name="ombdsearch">
+		  <input type="submit">
+
+		</form>
+
+
+		<ul>
+
+		</ul>
+
+
+</body>
+<!-- add event listener
+query selector -->
+
+<script type="text/javascript">
+
+
+function get(url, success) {
+  var xhr = new XMLHttpRequest();
+
+  xhr.addEventListener("readystatechange", function() {
+    if (xhr.readyState == 4 && xhr.status == 200) {
+      success(JSON.parse(xhr.response));
+    }
+  });
+
+  xhr.open("GET", url);
+  xhr.send();
+}
+
+
+
+function success(results) {
+	var movies = results["Search"];
+
+for (var i = 0; i < movies.length; i++) {
+	var movie = movies(i);
+	var li = document.createElement("li");
+	li.textContent = movie["Title"];
+	list.appendChild(li);
+
+	}
+
+}
+
+document.getElementById("ombdsearch").addEventListener("click", get);
+get("http://omdbapi.com/?s=", success)
+
+
+
+</script>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

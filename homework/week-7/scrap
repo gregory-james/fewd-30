@@ -1,0 +1,34 @@
+<script type="text/javascript">
+
+
+  // function addLike(event) {
+  //   event.preventDefault();
+
+  //   userName = prompt("Enter your name");
+
+  //  if (userName != null && userName != ""){
+  //     likes = document.querySelector(".like-count");
+  //     var likesNumber = parseInt(likes.textContent) + 1;
+  //     like.textContent = likesNumber;
+
+  //   }
+  // }
+
+
+    function addLike(event) {
+    event.preventDefault();
+
+    if (userName != null && userName != ""){
+      likes = document.querySelector(".like-count");
+      var likesNumber = parseInt(likes.textContent) + 1;
+      like.textContent = likesNumber;
+
+    }
+  }
+
+
+
+
+
+
+</script>
